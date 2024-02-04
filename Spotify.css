@@ -22,9 +22,13 @@ body{
     
 }
 .main_div{
-    width: 280px;
+    /* width: 280px; */
+    width: 19%;
     height: 97vh;
+    float: left;
+
 }
+
 .main_wala{
     display: flex;
   
@@ -474,6 +478,7 @@ body{
 .top_wala_bar{
     display: flex;
     margin: 10px;
+    margin-left: 0%;
     .left_wala_arrow{
         margin: 10px;
         margin-left: 20px;
@@ -715,6 +720,80 @@ body{
         }
     }
 }
+.top_bar_wala_content{
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    .btn_wala{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        padding-left: 1%;
+        /* justify-content: center;
+        align-items: center; */
+        /* background-color: #1FDF64; */
+        .all_btn{
+            cursor: pointer;
+            height: 30px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 30px;
+            margin: 10px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        .music_btn{
+            cursor: pointer;
+            height: 30px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #343434;
+            color: white;
+            border-radius: 30px;
+            margin: 10px;
+            margin-left: 1px;
+            margin-right: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        .music_btn:hover{
+            background-color: #3b3b3b;
+        }
+
+        .podcasts_btn{
+            cursor: pointer;
+            height: 30px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #343434;
+            color: white;
+            border-radius: 30px;
+            margin: 10px;
+            margin-left: 1px;
+            
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        .podcasts_btn:hover{
+            background-color: #3b3b3b;
+        }
+    }
+}
 .play_btn{
     position: relative;
     transition: transform 0.4s ease;
@@ -758,6 +837,8 @@ body{
     margin-bottom: 0px;
     overflow: scroll;
     margin-top: 0px;
+    width: 81%;
+    float: left;
     overflow-x: hidden;
     /* width: 169vh; */
     .top_wala_bar{
@@ -766,27 +847,30 @@ body{
         /* background-color: #1FDF64; */
     }
     .top_wala_suggestion{
+        width: 100%;
+        margin: 1%;
+    
+        padding: 10px;
         h1{
             font-size: 25px;
         }
-        margin: 10px;
-        padding: 10px;
+        
         .top_wala_suggestion_ke_song{
             display: flex;
             /* background-color: red; */
-            width: 165vh;
+            width: 100%;
             height: 300px;
             justify-content: center;
             align-items: center;
-            .song_animal{
+            /* .song_animal{
                 position: relative;
                 background-color: #121212;
                 height: 280px;
                 width: 180px;
                 margin-right: 12px;
-                /* background-color: black; */
+                 background-color: black; 
                 border-radius: 10px;
-            }
+            }*/
             .song_img_wala{
                 height: 200px;
                 width: 180px;
@@ -826,35 +910,38 @@ body{
                     padding: 0px;
                     transform: translate(0px,-18px);
                 }
-                /* justify-content: center; */
+           
                 word-wrap: break-word;
                 height: 30px;
                 width: 160px;
-                /* background-color: orange; */
+              
             }
             /* .song_content_wala:hover{
                 p{
                     text-decoration: underline;
                 }
             } */
-            .song_animal:hover{
+            /* .song_animal:hover{
                 background-color: #333333;
                 cursor: pointer;
-            }
+            } */
             
-            .song_animal:hover .play_btn{
+            /* .song_animal:hover .play_btn{
                 visibility: visible;
                 opacity: 1;
                 cursor: pointer;
                 transform: translate(110px,120px);
-            }
+            } */
             
             .song_wala_box{
                 position: relative;
                 background-color: #121212;
                 height: 280px;
                 width: 180px;
-                margin: 10px;
+                margin: 1%;
+                margin-left: 0%;
+                margin-right: 2%;
+                /* margin-left: 0px; */
                 /* background-color: black; */
                 border-radius: 10px;
             }
@@ -886,15 +973,16 @@ body{
     background-color: red;
 }
 .top_mix_wala{
+    width: 100%;
+    margin: 1%;
+    padding: 10px;
     h1{
         font-size: 25px;
     }
-    margin: 10px;
-    padding: 10px;
     .top_mix_wala_suggestion_ke_song{
         display: flex;
         /* background-color: red; */
-        width: 165vh;
+        width: 100%;
         height: 300px;
         justify-content: center;
         align-items: center;
@@ -975,7 +1063,9 @@ body{
             background-color: #121212;
             height: 280px;
             width: 180px;
-            margin: 10px;
+            margin: 1%;
+            margin-left:0px;
+            margin-right: 2%;
             /* background-color: black; */
             border-radius: 10px;
         }
@@ -999,19 +1089,21 @@ body{
 }
 
 .hits_diff_wala_div{
+   width: 100%;
+    margin: 1%;
+    padding: 10px;
+    /* padding-left: 0px; */
     h1{
         font-size: 25px;
+        
     }
-    margin: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    padding-left: 0px;
     .hits_diff_wala_suggestion_ke_song{
         display: flex;
         /* background-color: red; */
         /* width: 165vh; */
         /* padding-left:50px; */
         height: 300px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         
@@ -1072,7 +1164,10 @@ body{
             background-color: #121212;
             height: 280px;
             width: 180px;
-            margin: 10px;
+            margin: 1%;
+                margin-left: 0%;
+                margin-right: 2%;
+            
             /* background-color: black; */
             border-radius: 10px;
         }
@@ -1094,20 +1189,21 @@ body{
     }
 }
 .throwback_wala_div{
+    width: 100%;
+    margin: 1%;
+    padding: 10px;
+    /* padding-left: 0px; */
     h1{
         font-size: 25px;
     }
-    margin: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    padding-left: 0px;
     .throwback_wale_ke_song{
         display: flex;
-        padding-left: 50px;
+        /* padding-left: 50px; */
         /* background-color: red; */
         /* width: 165vh; */
         /* padding-left:50px; */
         height: 300px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         
@@ -1168,7 +1264,9 @@ body{
             background-color: #121212;
             height: 280px;
             width: 180px;
-            margin: 10px;
+            margin: 1%;
+            margin-left: 0%;
+            margin-right: 2%;
             /* background-color: black; */
             border-radius: 10px;
         }
@@ -1191,15 +1289,17 @@ body{
 }
 
 .recommended_for_today_wala_div{
+    width: 100%;
+    margin: 1%;
+    /* margin-left: 0px; */
+    padding: 10px;
+    
     h1{
         font-size: 25px;
     }
-    margin: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    padding-left: 0px;
     .recommended_for_today_wale_ke_song{
-        padding-left: 50px;
+        /* padding-left: 50px; */
+        width: 100%;
         display: flex;
         /* background-color: red; */
         /* width: 165vh; */
@@ -1265,7 +1365,9 @@ body{
             background-color: #121212;
             height: 280px;
             width: 180px;
-            margin: 10px;
+            margin: 1%;
+            margin-left: 0%;
+            margin-right: 2%;
             /* background-color: black; */
             border-radius: 10px;
         }
@@ -1288,19 +1390,21 @@ body{
 }
 
 .new_releases_for_you_wala_div{
+    width: 100%;
+    margin: 1%;
+    /* margin-left: 0px; */
+    padding: 10px;
+    /* padding-left: 0px; */
     h1{
         font-size: 25px;
     }
-    margin: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    padding-left: 0px;
     .new_releases_for_you_wale_ke_song{
         display: flex;
-        padding-left: 50px;
+       
         /* background-color: red; */
         /* width: 165vh; */
         /* padding-left:50px; */
+        width: 100%;
         height: 300px;
         justify-content: center;
         align-items: center;
@@ -1362,7 +1466,10 @@ body{
             background-color: #121212;
             height: 280px;
             width: 180px;
-            margin: 10px;
+            
+            margin: 1%;
+            margin-left: 0%;
+            margin-right: 2%;
             /* background-color: black; */
             border-radius: 10px;
         }
@@ -1385,21 +1492,20 @@ body{
 }
 
 .more_of_what_you_like_wala_div{
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
     h1{
-        padding-left: 0px;
+        
         font-size: 25px;
     }
-    margin: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    padding-left: 0px;
     .more_of_what_you_like_wale_ke_song{
         display: flex;
         /* background-color: red; */
         /* width: 165vh; */
         /* padding-left:50px; */
         height: 300px;
-        padding-left: 50px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         
@@ -1463,7 +1569,9 @@ body{
             background-color: #121212;
             height: 280px;
             width: 180px;
-            margin: 10px;
+            margin: 1%;
+            margin-left: 0%;
+            margin-right: 2%;
             /* background-color: black; */
             border-radius: 10px;
         }
