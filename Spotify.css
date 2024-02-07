@@ -33,6 +33,87 @@ body{
     display: flex;
   
 }
+.animal_song_play_wala_div{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    /* visibility: hidden; */
+    overflow: hidden;
+    z-index: 1;
+    /* transform: translateY(390%); */
+    transform: translate(-1%,700%);
+    background-color: black;
+    display: flex;
+    .img_wala_div{
+        display: flex;
+        justify-content: center;
+        
+        align-items: center;
+        height: calc(100% - 23%);
+        width: calc(100% - 96%);
+        /* background-color: #1FDF64; */
+        margin: 10px;
+        margin-left: 1%;
+        img{
+            height: calc(100% - 10%);
+            width: calc(100% - 10%);
+            
+        }
+        
+    }
+    .song_name_wala_div{
+        height: calc(100%);
+        width: calc(100% - 85%);
+        /* background-color: #1FDF64; */
+        
+        line-height: 0.5;
+        h1{
+            top: 30%;
+            position: absolute;
+            font-size: 16px;
+        }
+        p{
+            top: 50%;
+            position: absolute;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.7;
+        }
+    }
+    .audio_wala_div{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+     
+        align-items: center;
+        background-color: red;
+        audio::-webkit-media-controls-panel {
+            background-color: black;
+          }
+        audio::-webkit-media-controls-play-button {
+            background-color: white;
+            border-radius: 50%;
+        }
+        audio::-webkit-media-controls-mute-button{
+            cursor: pointer;
+            background-color: white;
+            border-radius: 50%;
+        }
+        audio::-webkit-media-controls-current-time-display{
+            /* background-color: white; */
+            color: white;
+        }
+        audio::-webkit-media-controls-time-remaining-display{
+            color: white;
+        }
+        audio::-webkit-media-controls-timeline{
+            /* color: white; */
+            background-color: white;
+        }
+    }
+}
+
 .home_search_wala{
     a{
         text-decoration: none;
@@ -792,6 +873,219 @@ body{
         .podcasts_btn:hover{
             background-color: #3b3b3b;
         }
+    }
+}
+.song_box{
+    margin: 1%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    gap: 1%;
+    /* background-color: #1FDF64; */
+    .animal_song{
+        display: flex;
+        cursor: pointer;
+        height: 60%;
+        width: 24%;
+        
+        background-color: #343434;
+        /* padding: 5px; */
+        /* gap: 20%; */
+        border-radius: 5px;
+        overflow: hidden;
+        .img_wala
+        {
+            /* margin-top: 2%; */
+            img{
+                height: 100%;
+            }            
+        }
+        .content_wala{
+            margin: 6%;
+            height: 40%;
+            width: auto;
+            /* background-color: #1FDF64; */
+            /* background-color: #1FDF64; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #fff; */
+            font-size: 8px;
+        }
+    }
+    .animal_song:hover{
+        background-color: #484848;
+    }
+    .monty_mix{
+        display: flex;
+        cursor: pointer;
+        height: 60%;
+        width: 24%;
+        
+        background-color: #343434;
+        /* padding: 5px; */
+        /* gap: 20%; */
+        border-radius: 5px;
+        overflow: hidden;
+        .img_wala
+        {
+            /* margin-top: 2%; */
+            img{
+                height: 100%;
+            }            
+        }
+        .content_wala{
+            margin: 5%;
+            height: 60%;
+            width: 50%;
+            /* background-color: #1FDF64; */
+            /* background-color: #1FDF64; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #fff; */
+            font-size: 8px;
+        }
+    }
+    .animal_song:hover{
+        background-color: #484848;
+    }
+    .animal_song:hover .play_btn{
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        transform: translate(450%,15%);
+        transition: 0.2s ease;
+    }
+    .play_btn{
+        box-shadow: 0px 0px 50px 0px;
+        /* position: relative; */
+        /* transition: transform 0.4s ease;
+        animation-iteration-count: infinite;
+        animation-delay: 0s; */
+        transition: 0.2s ease;
+        transform: translate(450%,15%);
+        visibility: hidden;
+       /* visibility: visible; */
+        opacity: 0;
+        position: absolute;
+    
+        height: 50px;
+        width: 50px;
+        /* position:absolute; */
+        /* background-color: #1FDF64; */
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    
+        div{
+            margin-left: 10%;
+            width: 1px;
+            height: 1px;
+            border:  10px solid transparent;
+            border-top: 0;
+            
+            border-bottom: 15px solid black;
+            transform: rotate(90deg);
+            /* height: 10px;
+            width: 10px;
+            background-color: #131313; */
+
+        } 
+       
+    
+    
+    }
+    
+    .monty_mix:hover .play_btn{
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        transform: translate(450%,15%);
+        transition: 0.2s ease;
+    }
+
+    .tu_hai_kahan_song{
+        display: flex;
+        cursor: pointer;
+        height: 60%;
+        width: 24%;
+        
+        background-color: #343434;
+        /* padding: 5px; */
+        /* gap: 20%; */
+        border-radius: 5px;
+        overflow: hidden;
+        .img_wala
+        {
+            /* margin-top: 2%; */
+            img{
+                height: 100%;
+            }            
+        }
+        .content_wala{
+            margin: 6%;
+            height: 40%;
+            width: auto;
+            /* background-color: #1FDF64; */
+            /* background-color: #1FDF64; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #fff; */
+            font-size: 8px;
+        }
+    }
+    .tu_hai_kahan_song:hover .play_btn{
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        transform: translate(450%,15%);
+        transition: 0.2s ease;
+    }
+
+    .Husn_song{
+        display: flex;
+        cursor: pointer;
+        height: 60%;
+        width: 24%;
+        
+        background-color: #343434;
+        /* padding: 5px; */
+        /* gap: 20%; */
+        border-radius: 5px;
+        overflow: hidden;
+        .img_wala
+        {
+            /* margin-top: 2%; */
+            img{
+                height: 100%;
+            }            
+        }
+        .content_wala{
+            margin: 6%;
+            height: 40%;
+            width: auto;
+            /* background-color: #1FDF64; */
+            /* background-color: #1FDF64; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #fff; */
+            font-size: 8px;
+        }
+    }
+    .Husn_song:hover .play_btn{
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        transform: translate(450%,15%);
+        transition: 0.2s ease;
     }
 }
 .play_btn{
@@ -1594,7 +1888,9 @@ body{
 }
 .footer_wala_content{
     height: 50vh;
-    width: 169vh;
+    /* width: 169vh; */
+    width: 100%;
+    margin-left: 2%;
 
     display: flex;
     border-bottom: 1px solid #2d2d2d;
@@ -1699,7 +1995,9 @@ body{
 }
 .last_wala_footer{
     height: 10vh;
-    width: 169vh;
+    /* width: 169vh; */
+    width: 100%;
+    margin-left: 2%;
     display: flex;
     /* background-color: red; */
     .last_wale_ka_content{
