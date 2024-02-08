@@ -4,7 +4,9 @@ body{
     height: 97vh;
     overflow: hidden;
     font-family: "CircularSpotifyTxT-Black";
+    
 }
+
 @import url(https://db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=CircularSpotifyTxT-Black);
 @font-face {
     font-family: "CircularSpotifyTxT-Black";
@@ -555,11 +557,20 @@ body{
         }
     }    
 }
-
+.header{
+    height: auto;
+    position: absolute;
+    background-color: #1c1c1c;
+    z-index: 1;
+}
+.extra_wala_ese_hei{
+    height: 15%;
+}
 .top_wala_bar{
     display: flex;
     margin: 10px;
     margin-left: 0%;
+    
     .left_wala_arrow{
         margin: 10px;
         margin-left: 20px;
@@ -873,6 +884,8 @@ body{
         .podcasts_btn:hover{
             background-color: #3b3b3b;
         }
+
+        
     }
 }
 .song_box{
@@ -1259,6 +1272,7 @@ body{
 
 
 }
+
 .right_side_wala_main_div::-webkit-scrollbar {
     display: none;
     
